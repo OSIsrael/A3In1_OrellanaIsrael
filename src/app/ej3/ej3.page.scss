@@ -1,0 +1,47 @@
+ion-content::part(background) {
+    background: #6E5470;
+  }
+  
+  ion-content::part(scroll) {
+    color: #fff;
+}
+.txt{
+  display: flex; 
+}
+ion-img{
+    display: flex;
+}
+ion-button {
+    display: flex;
+    
+    background-color: #E684F0;
+    color: #000000;
+    box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.3);
+    margin: 10px auto; /* Para centrar horizontalmente */
+    max-width: 100%; /* Para asegurar la capacidad de respuesta */
+    width: 17rem; /* Puedes ajustar este valor según sea necesario */
+    border-radius: 10px;
+    
+  }
+@media screen and (max-width: 500px) {
+    .txt {
+      display: none; /* Oculta el elemento cuando el ancho es igual o menor a 600px */
+    }
+   ion-img {
+        display: none; /* Oculta el elemento cuando el ancho es igual o menor a 600px */
+      }
+      ion-content::part(background) {
+        background: #9df770;
+      }
+      
+      ion-content::part(scroll) {
+        color: #fff;
+    }
+    ion-content{
+        font-size: 14px;
+    }
+    ion-button{
+        background-color: #F0D875;
+    }
+  
+  }
